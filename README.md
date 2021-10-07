@@ -1,4 +1,4 @@
-# fas-metrics
+# FAS metrics
 
 This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
 
