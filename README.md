@@ -1,6 +1,6 @@
-# OULU-NPU database evaluation metrics
+# OULU-NPU database useful functions
 
-This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
+This package implements the data generator for the OULU-NPU and the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
 
 - APCER: Attack Presentation Classification Error Rate
 - BPCER: Bona Fide Presentation Classification Error Rate
