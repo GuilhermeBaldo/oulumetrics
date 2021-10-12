@@ -1,6 +1,6 @@
-# OULU-NPU database useful functions
+# OULU-NPU 
 
-This package implements the data generator for the OULU-NPU and the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
+This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
 
 - APCER: Attack Presentation Classification Error Rate
 - BPCER: Bona Fide Presentation Classification Error Rate
@@ -11,7 +11,7 @@ This package implements the data generator for the OULU-NPU and the metrics (APC
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install fasmetrics
+pip install oulumetrics
 ```
 
 ## Usage
