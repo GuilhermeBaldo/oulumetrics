@@ -1,4 +1,4 @@
-# OULU-NPU database evaluation metrics
+# OULU-NPU metrics
 
 This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing described at the reference and used in the OULU-NPU dataset (https://sites.google.com/site/oulunpudatabase/).
 
@@ -11,7 +11,7 @@ This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install fasmetrics
+pip install oulumetrics
 ```
 
 ## Usage
