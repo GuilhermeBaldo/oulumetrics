@@ -56,7 +56,7 @@ def calculate_metrics(y_attack_types, y_pred, threshold=0.5):
         acer (float) [0-1] average classification error rate
     '''
     
-    y_pred = [(1 if y >= threshold else 0) for y in y_pred] # binarize y_pred using threshold
+    y_pred = [(0 if y >= threshold else 1) for y in y_pred] # binarize y_pred using threshold
     y_true = [(0 if y == 1 else 1) for y in y_attack_types] # get y_true from the y_attack_types
     
     # from now on 1=attack and 0=live
