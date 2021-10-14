@@ -1,1 +1,1 @@
-from oulumetrics import calculate_metrics
+from .metrics import calculate_metrics

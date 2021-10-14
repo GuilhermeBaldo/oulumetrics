@@ -72,12 +72,26 @@ def calculate_metrics(y_attack_types, y_pred, threshold=0.5):
     # tn, fp, fn, tp
     cm_print_attack = confusion_matrix(y_true_print_attack, y_pred_print_attack) # confusion matrix for print attack
     cm_display_attack = confusion_matrix(y_true_display_attack, y_pred_display_attack) # confusion matrix for display attack
-
-    apcer_print = cm_print_attack[2] / (cm_print_attack[3] + cm_print_attack[2]) # fn / (tp + fn)
-    apcer_display = cm_display_attack[2] / (cm_display_attack[3] + cm_display_attack[2]) # fn / (tp + fn)
     
-    bpcer_print = cm_print_attack[1] / (cm_print_attack[1] + cm_print_attack[0]) # fp/(fp + tn)
-    bpcer_display = cm_display_attack[1] / (cm_display_attack[1] + cm_display_attack[0]) # fp/(fp + tn)
+    try:
+        apcer_print = cm_print_attack[2] / (cm_print_attack[3] + cm_print_attack[2]) # fn / (tp + fn)
+    except:
+        apcer_print = 0.0
+    
+    try:
+        apcer_display = cm_display_attack[2] / (cm_display_attack[3] + cm_display_attack[2]) # fn / (tp + fn)
+    except:
+        apcer_display = 0.0
+
+    try:
+        bpcer_print = cm_print_attack[1] / (cm_print_attack[1] + cm_print_attack[0]) # fp/(fp + tn)
+    except:
+        bpcer_print = 0.0
+
+    try:
+        bpcer_display = cm_display_attack[1] / (cm_display_attack[1] + cm_display_attack[0]) # fp/(fp + tn)
+    except:
+        bpcer_display = 0.0
 
     apcer = max(apcer_print, apcer_display) # max of both apcer (print, display) attack presentation classification error rate
     bpcer = max(bpcer_print, bpcer_display) # max of both bpcer (print, display) bona fide presentation classification error rate
