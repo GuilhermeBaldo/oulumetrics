@@ -8,7 +8,7 @@ This package implements the metrics (APCER, BPCER, ACER) for face anti-spoofing 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install oulumetrics.
 
 ```bash
 pip install oulumetrics
